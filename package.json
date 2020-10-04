@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "next build",
+    "build": "NODE_OPTIONS=--max_old_space_size=2048 next build",
     "prestart": "npm run build",
     "start": "NODE_ENV=production node server.js",
     "dev": "node server.js"
